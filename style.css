@@ -27,9 +27,15 @@ body {
     box-shadow: none;
 }
 
-.nav-item {
+.nav-link {
     font-weight: 600;
-    padding-right: 10px;
+    padding-right: 15px;
+}
+
+.dropdown-item{
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .saocamilo-area{
@@ -100,7 +106,7 @@ body {
     }
 
     .navbar-nav {
-        padding-right: 30px;
+        padding-right: 35px;
     }
 
 }
