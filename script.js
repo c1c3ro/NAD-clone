@@ -1,3 +1,10 @@
+
+// window.onload = function() {
+//     headerHeight = document.getElementById("header").offsetHeight;
+//     document.getElementById("spacer").style.height = headerHeight + "px";
+// };
+
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -18,7 +25,6 @@ function scrollFunction() {
         document.getElementById("header").style.backgroundColor = "#fff";
         document.getElementById("navbar-logo").src = "https://cdn.nad-edu.com.br/wp-content/uploads/2021/07/Logo-vermelha-230x90.png"
         document.getElementById("navbar-toggle").style.color = "#4b0412";
-        console.log(document.querySelectorAll(".nav-item"));
         if (screen.availWidth > 992){
             for (const navItem of navItems) {
                 navItem.classList.remove('scroll');

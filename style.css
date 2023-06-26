@@ -18,6 +18,10 @@ body {
     /*line-height: 14px;*/
 }
 
+#spacer{
+    height: 73px;
+}
+
 #navbar-toggle{
     color: #4b0412;
     font-size: 30px;
@@ -101,12 +105,21 @@ body {
 
 @media (min-width: 768px) {
 
+    #spacer{
+        height: 105px;
+    }
+
     .nav-item {
         font-size: 11px;
     }
 
     .navbar-nav {
         padding-right: 35px;
+    }
+
+    .card{
+        margin-right: 0 !important;
+        margin-left: auto !important;
     }
 
 }
