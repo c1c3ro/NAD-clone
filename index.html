@@ -17,7 +17,7 @@
     <link href="style.css" rel="stylesheet">
     <style>
         main {
-          height: 200vh;
+          /* height: 200vh; */
         }
     </style>
 </head>
@@ -94,13 +94,83 @@
       </div>
     </div>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid pt-5 pb-2 text-center saocamilo-area">
+      
       <div class="row">
-        <div class="col-md-6">
-          <img src="https://cdn.nad-edu.com.br/wp-content/uploads/2021/08/logo_horizontal_centro_universitario_sao_camilo.png" alt="" width="230" height="auto">
+        <div class="col-md-6 mb-5 mx-auto my-auto">
+          <img src="https://cdn.nad-edu.com.br/wp-content/uploads/2021/08/logo_horizontal_centro_universitario_sao_camilo.png" class="saocamilo-logo" alt="" width="210" height="auto">
         </div>
-        <div class="col-md-6">
-          <img src="https://cdn.nad-edu.com.br/wp-content/uploads/2023/06/QR-Code_E-MEC-e1669383441847-webp.webp" alt="" width="350" height="auto">
+        <div class="col-md-6 mx-auto my-auto">
+          <img src="https://cdn.nad-edu.com.br/wp-content/uploads/2023/06/QR-Code_E-MEC-e1669383441847-webp.webp" class="mec-code" alt="" width="340px" height="auto">
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-12 mx-auto">
+          <img src="https://www.nad-edu.com.br/wp-content/uploads/2022/09/Area-exlusiva-e1663865540355.png" class="area-exclusiva" alt="" width="230px" height="auto">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid py-5 text-center contato-area">
+      <div class="row">
+        <h4 class="pt-4" style="font-weight: 700; letter-spacing: normal;">ENTRE EM CONTATO!</h4>
+        <hr class="line mx-auto">
+        <p class="pt-2" style="font-weight: 400; font-size: 13px;"> Preencha o formulário abaixo e aguarde nosso retorno! </p>
+      </div>
+      <div class="row my-5">
+        <div class="col-12 col-md-4">
+          <div class="card text-bg-light mb-3 ms-auto ms-md-auto" style="max-width: 18rem;">
+            <div class="card-body">
+              <span class="card-icon"><i class="bi bi-whatsapp"></i></span>
+              <p class="card-text mt-3"><a href="#">(88) 2155-1646</a></p>
+            </div>
+          </div>
+          <div class="card text-bg-light mb-3 ms-auto ms-md-auto" style="max-width: 18rem;">
+            <div class="card-body">
+              <span class="card-icon"><i class="bi bi-geo-alt-fill"></i></span>
+              <p class="card-text mt-3"><a href="#">Rua Catulo da Paixão Cearense, nº 175, sala 1306</a></p>
+            </div>
+          </div>
+          <div class="card text-bg-light mb-3 ms-auto ms-md-auto" style="max-width: 18rem;">
+            <div class="card-body">
+              <span class="card-icon"><i class="bi bi-telephone-fill"></i></span>
+              <p class="card-text mt-3"><a href="#">(88) 2131-9977</a></p>
+            </div>
+          </div>
+          <div class="card text-bg-light mb-3 ms-auto ms-md-auto" style="max-width: 18rem;">
+            <div class="card-body">
+              <span class="card-icon"><i class="bi bi-envelope"></i></span>
+              <p class="card-text mt-3"><a href="#">atendimento@nad-edu.com.br</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 text-start mt-2 mt-md-0">
+          <p class="pt-2" style="font-weight: 500; font-size: 14px;"> Campos marcados com <span class="obrigatorio">*</span> são obrigatórios. </p>
+          <form action="" method="post">
+            <div class="col-12 col-md-6 mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nome: <span class="obrigatorio">*</span></label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" required>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <label for="exampleFormControlInput2" class="form-label">E-mail: <span class="obrigatorio">*</span></label>
+              <input type="email" class="form-control" id="exampleFormControlInput2" required>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <label for="exampleFormControlInput3" class="form-label">Telefone: <span class="obrigatorio">*</span></label>
+              <input type="text" class="form-control" id="exampleFormControlInput3" required>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <label for="exampleFormControlInput4" class="form-label">Assunto: </label>
+              <input type="email" class="form-control" id="exampleFormControlInput4">
+            </div>
+            <div class="col-12 col-md-8 mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Mensagem: <span class="obrigatorio">*</span></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-form py-2 px-3">Enviar</button>
+          </form>
         </div>
       </div>
     </div>

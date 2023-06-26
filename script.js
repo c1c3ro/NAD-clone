@@ -1,15 +1,16 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+
+    const navItems = document.querySelectorAll(".nav-link");
+
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("header").style.backgroundColor = "#4b0412";
         document.getElementById("navbar-logo").src = "https://cdn.nad-edu.com.br/wp-content/uploads/2020/02/logo_oficial_branca_compress.png"
         document.getElementById("navbar-toggle").style.color = "#fff";
         if (screen.availWidth > 992){
-            console.log(screen.availWidth);
-            const fakeImages = document.querySelectorAll(".nav-link");
-            for (const fakeImage of fakeImages) {
-                fakeImage.classList.add('scroll');
+            for (const navItem of navItems) {
+                navItem.classList.add('scroll');
             }
         }
         
@@ -19,10 +20,8 @@ function scrollFunction() {
         document.getElementById("navbar-toggle").style.color = "#4b0412";
         console.log(document.querySelectorAll(".nav-item"));
         if (screen.availWidth > 992){
-            console.log(screen.availWidth);
-            const fakeImages = document.querySelectorAll(".nav-link");
-            for (const fakeImage of fakeImages) {
-                fakeImage.classList.remove('scroll');
+            for (const navItem of navItems) {
+                navItem.classList.remove('scroll');
             }
         }
     }
