@@ -12,14 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!--  Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--  JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
     <script src=".\script.js"></script>
     <link href="style.css" rel="stylesheet">
-    <style>
-        main {
-          /* height: 200vh; */
-        }
-    </style>
+    
 </head>
 <body>
   <header class="fixed-top">
@@ -33,7 +31,7 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <h5 class="offcanvas-title mx-auto" id="offcanvasNavbarLabel">Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -41,22 +39,19 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">QUEM SOMOS</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown text-center">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PÓS-GRADUAÇÃO NAD</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Enfermagem em UTI Pediátrica e Neonatal</a></li>
-                  <li><a class="dropdown-item" href="#">Enfermagem em Obstetrícia</a></li>
+                <ul class="dropdown-menu text-center">
                   <li><a class="dropdown-item" href="#">Enfermagem em Unidade de Terapia e Intensiva</a></li>
                   <li><a class="dropdown-item" href="#">Fisioterapia em Unidade de Terapia Intensiva</a></li>
+                  <li><a class="dropdown-item" href="#">Enfermagem em UTI Pediátrica e Neonatal</a></li>
                   <li><a class="dropdown-item" href="#">Fisioterapia em UTI Pediátrica e Neonatal</a></li>
+                  <li><a class="dropdown-item" href="#">Enfermagem em Obstetrícia</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">CURSOS DE EXTENSÃO</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu text-center">
                   <li><a class="dropdown-item" href="#">Medicina</a></li>
                   <li><a class="dropdown-item" href="#">Fisioterapia</a></li>
                   <li><a class="dropdown-item" href="#">Enfermagem</a></li>
@@ -121,7 +116,28 @@
 
       <div class="row my-5">
         <div class="col-12 mx-auto">
+          <a data-bs-toggle="collapse" href="#polos" role="button" aria-expanded="false" aria-controls="polos">
           <img src="https://www.nad-edu.com.br/wp-content/uploads/2022/09/Area-exlusiva-e1663865540355.png" class="area-exclusiva" alt="" width="230px" height="auto">
+          </a>
+        </div>
+      </div>
+
+      <div class="row my-5 collapse" id="polos">
+        <div class="col-12 col-md-3 ms-auto my-3">
+          <p class="polo-title"> Polo de Ensino <br> Juazeiro do Norte </p>
+          <hr class="polo-line mx-auto">
+          <button class="polo-button btn py-2 px-3" href="#!">Acessar</button>
+          <p class="polo-title mt-5"> Polo de Ensino <br> Crato </p>
+          <hr class="polo-line mx-auto">
+          <button class="polo-button btn py-2 px-3" href="#!">Acessar</button>
+        </div>
+        <div class="col-12 col-md-3 me-auto mt-3 mb-1">
+          <p class="polo-title mt-3 mt-md-0"> Polo de Ensino <br> Santarém </p>
+          <hr class="polo-line mx-auto">
+          <button class="polo-button btn py-2 px-3" href="#!">Acessar</button>
+          <p class="polo-title mt-5"> Polo de Ensino <br> Itapipoca </p>
+          <hr class="polo-line mx-auto">
+          <button class="polo-button btn py-2 px-3" href="#!">Acessar</button>
         </div>
       </div>
 
@@ -198,6 +214,30 @@
     </div>
   </main>
 
+  <footer>
+    <div class="container-fluid">
+      <div class="row py-5 footer-logo">
+        <div class="col-12 text-center">
+          <a class="" href="#">
+            <img src="https://cdn.nad-edu.com.br/wp-content/uploads/2020/02/logo_oficial_branca_compress.png" alt="" width="240" height="auto">
+          </a>
+        </div>
+        <div class="col-12 pt-3 text-center">
+          <a class="btn btn-md mx-1 btn-floating social-icon" href="#!" role="button">
+          <i class="bi bi-facebook"></i></a>
+          <a class="btn btn-md mx-1 btn-floating social-icon" href="#!" role="button">
+          <i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row py down-footer">
+        <div class="col-12 text-center">
+          <p class="my-3"> 2018 Todos os direitos reservados - Núcleo Avançado de Desenvolvimento Empresarial e Profissional LTDA | CNPJ: 30.499.835/0001-07 </p>
+        </div>
+      </div>
+    </div>
+  </footer>
     
 </body>
 </html>

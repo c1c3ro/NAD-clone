@@ -38,13 +38,44 @@ body {
 
 .dropdown-item{
     font-family: inherit;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
+}
+
+.dropdown-menu li{
+    margin: 10px 0;
+}
+
+.dropdown-toggle::after{
+    margin-left: 0.5em;
 }
 
 .saocamilo-area{
     background-color: #E4E4E4C4;
     background-image: url(https://www.nad-edu.com.br/wp-content/uploads/2023/06/pattern-webp.webp);
+}
+
+.polo-title{
+    color: #AF0C32;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.2em;
+}
+
+.polo-button{
+    background-color: #AF0C32;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.polo-line{
+    width: 100px;
+    border: 2px solid #af0c32;
+    border-radius: 25px;
+    opacity: 1;
 }
 
 .contato-area{
@@ -88,7 +119,27 @@ body {
 }
 
 .scroll {
+    color: #ffffffdd;
+}
+
+.scroll:focus, .scroll:hover {
     color: #fff;
+}
+
+.footer-logo{
+    background-color: #4b0412;
+}
+
+.social-icon{
+    background-color: #75061b;
+    color: #fff;
+}
+
+.down-footer{
+    background-color: #75061b;
+    color: #fff;
+    font-weight: 400; 
+    font-size: 11px;
 }
 
 @media (min-width: 500px) {
