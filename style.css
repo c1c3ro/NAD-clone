@@ -132,7 +132,13 @@ body {
 
 .social-icon{
     background-color: #75061b;
+    color: #ffffffdd;
+}
+
+.social-icon:hover, .social-icon:focus, .social-icon:active {
     color: #fff;
+    background-color: #8d1f33;
+    border-color: transparent;
 }
 
 .down-footer{
