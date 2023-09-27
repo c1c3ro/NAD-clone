@@ -1,0 +1,259 @@
+---
+import bootstrapcss from "bootstrap/dist/css/bootstrap.min.css?url";
+import bootstrapjs from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
+
+export interface Props {
+	title: string; 
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script src={bootstrapjs}> </script>
+		<link rel="stylesheet" href={bootstrapcss}>
+		<link rel="preload" as="image" href="https://cdn.nad-edu.com.br/wp-content/uploads/2020/02/logo_oficial_branca_compress.png">
+		<!--  Bootstrap icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<!--  JQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+		<header class="fixed-top">
+			<nav id="header" class="navbar navbar-expand-lg py-md-4">
+			  <div class="container-fluid">
+				<a class="navbar-brand mx-2 ms-md-3 ms-lg-5" href="#">
+				  <img id="navbar-logo" src="https://cdn.nad-edu.com.br/wp-content/uploads/2020/02/logoOficial.png" alt="" width="200" height="auto">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				  <i id="navbar-toggle" class="bi bi-list"></i>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				  <div class="offcanvas-header">
+					<h5 class="offcanvas-title mx-auto" id="offcanvasNavbarLabel">Menu</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				  </div>
+				  <div class="offcanvas-body">
+					<ul id="navbar-menu" class="navbar-nav mr-auto justify-content-end flex-grow-1 align-items-center">
+					  <li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#">QUEM SOMOS</a>
+					  </li>
+					  <li class="nav-item dropdown text-center">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PÓS-GRADUAÇÃO NAD</a>
+						<ul class="dropdown-menu text-center">
+						  <li><a class="dropdown-item" href="#">Enfermagem em Unidade de Terapia e Intensiva</a></li>
+						  <li><a class="dropdown-item" href="#">Fisioterapia em Unidade de Terapia Intensiva</a></li>
+						  <li><a class="dropdown-item" href="#">Enfermagem em UTI Pediátrica e Neonatal</a></li>
+						  <li><a class="dropdown-item" href="#">Fisioterapia em UTI Pediátrica e Neonatal</a></li>
+						  <li><a class="dropdown-item" href="#">Enfermagem em Obstetrícia</a></li>
+						</ul>
+					  </li>
+					  <li class="nav-item dropdown text-center">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">CURSOS DE EXTENSÃO</a>
+						<ul class="dropdown-menu text-center">
+						  <li><a class="dropdown-item" href="#">Medicina</a></li>
+						  <li><a class="dropdown-item" href="#">Fisioterapia</a></li>
+						  <li><a class="dropdown-item" href="#">Enfermagem</a></li>
+						</ul>
+					  </li>
+					  <li class="nav-item dropdown text-center">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">RECRUTAMENTO & SELEÇÃO</a>
+						<ul class="dropdown-menu text-center">
+						  <li><a class="dropdown-item" href="#">Cadastro do Candidato</a></li>
+						  <li><a class="dropdown-item" href="#">R&S - Editais</a></li>
+						  <li><a class="dropdown-item" href="#">Resultados</a></li>
+						</ul>
+					  </li>
+					  <li class="nav-item dropdown text-center">
+						<a style="font-weight: bold;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ALUNO</a>
+						<ul class="dropdown-menu dropdown-menu-end text-center">
+						  <li><a class="dropdown-item" href="#">Sistema Acadêmico</a></li>
+						  <li><a class="dropdown-item" href="#">Requerimento</a></li>
+						</ul>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		<div id="spacer">
+			&nbsp;
+		</div>
+
+		<slot />
+		
+		<footer>
+			<div class="container-fluid">
+			  <div class="row py-5 footer-logo">
+				<div class="col-12 text-center">
+				  <a class="" href="#">
+					<img src="https://cdn.nad-edu.com.br/wp-content/uploads/2020/02/logo_oficial_branca_compress.png" alt="" width="240" height="auto">
+				  </a>
+				</div>
+				<div class="col-12 pt-3 text-center">
+				  <a class="btn btn-md mx-1 btn-floating social-icon" href="#!" role="button">
+				  <i class="bi bi-facebook"></i></a>
+				  <a class="btn btn-md mx-1 btn-floating social-icon" href="#!" role="button">
+				  <i class="bi bi-instagram"></i></a>
+				</div>
+			  </div>
+			</div>
+			<div class="container-fluid">
+			  <div class="row py down-footer">
+				<div class="col-12 text-center">
+				  <p class="my-3"> 2018 Todos os direitos reservados - Núcleo Avançado de Desenvolvimento Empresarial e Profissional LTDA | CNPJ: 30.499.835/0001-07 </p>
+				</div>
+			  </div>
+			</div>
+		</footer>
+
+		<script>
+			function scrollFunction() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					$("#header").css("background-color", "#4b0412");
+					$("#navbar-logo").attr("src", "https://cdn.nad-edu.com.br/wp-content/uploads/2020/02/logo_oficial_branca_compress.png");
+					if (screen.availWidth > 992){
+						$(".nav-link").addClass("scroll");
+					} else {
+						$("#navbar-toggle").css("color", "#fff");
+						if ($(".nav-link").hasClass("scroll")){
+							$(".nav-link").removeClass("scroll");
+						}
+					}
+				} else {
+					$("#header").css("background-color", "#fff");
+					$("#navbar-logo").attr("src", "https://cdn.nad-edu.com.br/wp-content/uploads/2020/02/logoOficial.png");
+					if (screen.availWidth > 992){
+						$(".nav-link").removeClass("scroll");
+					} else {
+						$("#navbar-toggle").css("color", "#4b0412");
+						if ($(".nav-link").hasClass("scroll")){
+							$(".nav-link").removeClass("scroll");
+						}
+					}
+				}
+				}
+			$(function() {
+				window.onscroll = function() {scrollFunction()};
+			});
+		</script>
+
+	</body>
+</html>
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+
+	html, body {
+    overflow-x: hidden;
+	}
+
+	body {
+		position: relative;
+		color: #424242;
+		font-size: 14px;
+		font-family: "Poppins", sans-serif;
+		letter-spacing: .7px;
+	}
+
+	#header {
+		background-color: white;
+		transition: 0.5s;
+		padding: 16px 0px;
+		/*line-height: 14px;*/
+	}
+
+	#spacer{
+		height: 74.4px;
+	}
+
+	#navbar-toggle{
+		color: #4b0412;
+		font-size: 30px;
+	}
+
+	.navbar-toggler:focus{
+		box-shadow: none;
+	}
+
+	.nav-link {
+		font-weight: 600;
+		padding-right: 15px;
+	}
+
+	.dropdown-item{
+		font-family: inherit;
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	.dropdown-menu li{
+		margin: 10px 0;
+	}
+
+	.dropdown-toggle::after{
+		margin-left: 0.5em;
+	}
+
+	.scroll {
+    color: #ffffffdd;
+	}
+
+	.scroll:focus, .scroll:hover, .scroll:active {
+		color: #fff !important;
+	}
+
+	.footer-logo{
+		background-color: #4b0412;
+	}
+
+	.social-icon{
+		background-color: #75061b;
+		color: #ffffffdd;
+	}
+
+	.social-icon:hover, .social-icon:focus, .social-icon:active {
+		color: #fff;
+		background-color: #8d1f33;
+		border-color: transparent;
+	}
+
+	.down-footer{
+		background-color: #75061b;
+		color: #fff;
+		font-weight: 400; 
+		font-size: 11px;
+	}
+
+	@media (min-width: 992px) {
+		#spacer{
+			height: 90px;
+		}
+
+		/* #navbar-menu {
+		padding-right: 90px;
+		} */
+
+		.nav-item {
+			font-size: 11px;
+		}
+
+		.navbar-nav {
+			padding-right: 30px;
+		}
+	}
+</style>

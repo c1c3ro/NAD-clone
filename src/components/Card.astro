@@ -1,0 +1,40 @@
+---
+export interface Props {
+	icon: string;
+	body: string;
+	href: string;
+}
+
+const { href, icon, body } = Astro.props;
+---
+
+<div class="card text-bg-light mb-3 mx-auto" style="max-width: 18rem;">
+	<div class="card-body">
+	  <span class="card-icon"><i class={icon}></i></span>
+	  <p class="card-text mt-3"><a href={href}> {body} </a></p>
+	</div>
+</div>
+
+<style>
+	.card{
+		background-color: RGBA(248,249,250,0.5)!important;
+		border: 2px solid #E5E5E5;
+	}
+
+	.card-icon{
+		font-size: 40px;
+		color: #4d4d4d;
+	}
+
+	.card-text a{
+		text-decoration: none;
+		color: #af0c32;
+	}
+
+	@media (min-width: 768px) {
+		.card{
+			margin-right: 0 !important;
+			margin-left: auto !important;
+		}
+	}
+</style>
